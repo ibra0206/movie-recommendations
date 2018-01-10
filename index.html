@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Recommendations</title>
+    <meta name="viewport" content="width=device-width" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Ultra" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+    <main>
+        <header class="search">
+           <!-- <img id="back-button" data-src="./img/caret.svg" class="iconic iconic-md" data-direction="left" alt="Back Button" title="Back"/>-->
+            <div id="search-button">
+            <img class="iconic iconic-md" data-src="./img/magnifying-glass.svg" alt="Search" title="Search" />
+            </div>
+            <input type="text" id="search-input" placeholder="search" />
+        </header>
+
+        <div class="page active" id="search-results">
+            <section class="title">search results</section>
+            <section class="content">
+                <div class="movie">
+                    <img src="" alt="" class="poster" alt="movie poster">
+                    <h2 class="movie-title">Find Movies!</h2>
+                    <p class="movie-desc">Click on Movie Titles for Recommendations of Similar Movies.</p>
+                </div>
+            </section>
+            <div class="attribution">
+                <img src="./img/powered-by-rectangle-blue.svg" alt="The Movie DB" />
+            </div>
+        </div>
+
+        <div class="page" id="recommend-results">
+            <section class="title">Y</section>
+            <section class="content"></section>
+            <div class="attribution 1">
+                <img src="./img/powered-by-rectangle-blue.svg" alt="The Movie DB" />
+            </div>
+        </div>
+    </main>
+
+    <div class="loading not">
+        <img class="iconic" data-src="./img/loop-circular.svg" title="loop circular" />
+    </div>
+
+    <!--<div class="attribution 2">
+        <img src="./img/powered-by-rectangle-blue.svg" alt="The Movie DB" />
+    </div>-->
+
+    <script src="./js/iconic.min.js"></script>
+    <script src="./js/key.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
